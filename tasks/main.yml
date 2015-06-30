@@ -1,0 +1,6 @@
+---
+- name: install openjdk
+  yum: name="java-{{ java_version }}-openjdk" state=present
+  tags:
+    - java
+    - packages
