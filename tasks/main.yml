@@ -4,3 +4,10 @@
   tags:
     - java
     - packages
+
+- name: install openjdk devel
+  yum: name="java-{{ java_version }}-openjdk-devel" state=present
+  tags:
+    - java
+    - packages
+    - development

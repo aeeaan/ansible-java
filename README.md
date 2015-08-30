@@ -9,6 +9,7 @@ Role Variables
 | Variable		| Default							| Notes				|
 | :---			| :---								| :---				|
 | java_version		| 1.8.0								| should match package name	|
+| java_devel		| false								| installs base devel rpm	|
 
 Example Playbook
 ----------------
