@@ -1,12 +1,17 @@
 ---
 - name: install openjdk
-  yum: name="java-{{ java_version }}-openjdk" state=present
+  yum: 
+    name: "java-{{ java_version }}-openjdk"
+    state: present
   tags:
     - java
     - packages
 
 - name: install openjdk devel
-  yum: name="java-{{ java_version }}-openjdk-devel" state=present
+  yum:
+    name: "java-{{ java_version }}-openjdk-devel"
+    state: present
+  when: java_devel
   tags:
     - java
     - packages
